@@ -13,9 +13,7 @@ class index extends controller
         $biller = Biller::getInstance();
         $biller->setUsers($users);
         $users = $biller->runApi();
-        foreach($users as $key => $user){
-            echo "$key = username: ".$user['username']." => $".$user['amount_to_bill']."<br>";
-        }
+       var_dump($users);
     }
 
  
